@@ -23,7 +23,7 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>COURSE ID</th>
+                <th>COURSE</th>
                 <th>NAME</th>
                 <th>DESCRIPTION</th>
                 <th>VIDEOS</th>
@@ -42,6 +42,7 @@
                     <td>@item.course_id</td>
                     <td>@item.name</td>
                     <td>@item.description</td>
+                    
                     <td>
                         @if (!string.IsNullOrEmpty(item.videos))
                         {

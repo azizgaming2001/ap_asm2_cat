@@ -388,12 +388,12 @@ C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\staticwebassets\msb
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\scopedcss\bundle\Tranning.styles.css
-C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\scopedcss\projectbundle\Tranning.bundle.scp.css
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\Tranning.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\Tranning.dll
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\refint\Tranning.dll
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\Tranning.pdb
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\Tranning.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\ref\Tranning.dll
+C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ADMIN\Desktop\AD_ASM-main\Tranning\obj\Debug\net7.0\scopedcss\projectbundle\Tranning.bundle.scp.css

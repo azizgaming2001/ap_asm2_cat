@@ -92,6 +92,7 @@ namespace Tranning.Controllers
         {
             TopicDetail topic = new TopicDetail();
             PopulateCategoryDropdown();
+            PopulateCategoryDropdown1();
             return View(topic);
         }
 
@@ -141,6 +142,7 @@ namespace Tranning.Controllers
                 }
 
                 PopulateCategoryDropdown();
+                PopulateCategoryDropdown1();
                 return View(topic);
             }
             catch (Exception ex)
@@ -199,6 +201,32 @@ namespace Tranning.Controllers
                 ViewBag.Stores = new List<SelectListItem>();
             }
         }
+
+        private void PopulateCategoryDropdown1()
+        {
+            try
+            {
+                var users = _dbContext.Users
+                    .Where(m => m.deleted_at == null && m.role_id == 3)
+                    .Select(m => new SelectListItem { Value = m.id.ToString(), Text = m.full_name })
+                    .ToList();
+
+                if (users != null)
+                {
+                    ViewBag.Stores1 = users;
+                }
+                else
+                {
+                    _logger.LogError("User is null");
+                    ViewBag.Stores1 = new List<SelectListItem>();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while populating category dropdown.");
+                ViewBag.Stores1 = new List<SelectListItem>();
+            }
+        }
         [HttpGet]
         public IActionResult Delete(int id = 0)
         {
@@ -235,6 +263,7 @@ namespace Tranning.Controllers
             {
                 // Set ViewBag.Stores to populate the dropdown in the view
                 PopulateCategoryDropdown();
+                PopulateCategoryDropdown1();
 
                 // Map the data to the TopicDetail model
                 var topic = new TopicDetail
@@ -243,7 +272,7 @@ namespace Tranning.Controllers
                     course_id = data.course_id,
                     name = data.name,
                     description = data.description,
-                    status = data.status,
+                    status = data.status
                     // Map other properties as needed
                 };
 
@@ -298,6 +327,7 @@ namespace Tranning.Controllers
 
                 // If ModelState is not valid, repopulate the dropdown and return to the view
                 PopulateCategoryDropdown();
+                PopulateCategoryDropdown1();
                 return View(topic);
             }
             catch (Exception ex)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YjDsk19L5k6a/0VHjgiHGYOOynj9K0FmmZqeOfj0MH0=",
+  "Hash": "Y/78WMolyaQIdTZdR5CxNc5tpDFMgr6Kk+4hlKGQnrk=",
   "Source": "Tranning",
   "BasePath": "_content/Tranning",
   "Mode": "Default",
@@ -5746,23 +5746,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\0158e1ff-d683-4253-ae23-dd6cd7cd0c9e-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\0a828748-5f83-4f8c-895a-6b3197e23b9e-e12e1e.jpg",
-      "SourceId": "Tranning",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
-      "BasePath": "_content/Tranning",
-      "RelativePath": "uploads/images/0a828748-5f83-4f8c-895a-6b3197e23b9e-e12e1e.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\images\\0a828748-5f83-4f8c-895a-6b3197e23b9e-e12e1e.jpg"
-    },
-    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\0b1006c8-9135-4ed1-afcc-a89e13c90832-1620_1.jpg",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -5778,6 +5761,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\0b1006c8-9135-4ed1-afcc-a89e13c90832-1620_1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\0b76bd27-0fc9-4cee-962d-6454d19253cf-3.jpg",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/images/0b76bd27-0fc9-4cee-962d-6454d19253cf-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\0b76bd27-0fc9-4cee-962d-6454d19253cf-3.jpg"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\146611e1-0331-456a-97ca-a76c0d38a081-8c56de959cd76b8932c6.jpg",
@@ -5829,6 +5829,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\1b7a44fb-bba3-4136-80bf-63bdbc000b02-91073226_2826935270767275_1885454002577997824_n.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\1dcc354a-14ad-4a17-b0b6-5363c7232b69-3.jpg",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/images/1dcc354a-14ad-4a17-b0b6-5363c7232b69-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\1dcc354a-14ad-4a17-b0b6-5363c7232b69-3.jpg"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\1dd84315-955b-4755-bb1c-7d7631e44a50-3.jpg",
@@ -6001,6 +6018,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\3a6dd03e-13bd-4cd4-838e-ce65f0f89f3b-81587674_109538533910535_5605031401880551424_n.jpg"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\3b679899-3528-4b13-936f-8087de0812dc-3.jpg",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/images/3b679899-3528-4b13-936f-8087de0812dc-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\3b679899-3528-4b13-936f-8087de0812dc-3.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\480f6782-b4f1-4ae7-942e-fbbac958bf09-2.jpg",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -6103,23 +6137,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\61ed3a8c-5bf4-4cb4-a371-a8e93bbb3fa7-3.jpg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\6219418b-6a1d-46cd-a09b-6e8be38d0bac-fpt.jpg",
-      "SourceId": "Tranning",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
-      "BasePath": "_content/Tranning",
-      "RelativePath": "uploads/images/6219418b-6a1d-46cd-a09b-6e8be38d0bac-fpt.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\images\\6219418b-6a1d-46cd-a09b-6e8be38d0bac-fpt.jpg"
-    },
-    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\6686d6a6-8166-48ca-b9aa-d5a749635d2a-5.png",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -6188,23 +6205,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\7396a719-3a34-46d2-a52c-23bd7bda2c0b-8c56de959cd76b8932c6.jpg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\74981626-3a18-497f-acef-134d623704cc-fpt.jpg",
-      "SourceId": "Tranning",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
-      "BasePath": "_content/Tranning",
-      "RelativePath": "uploads/images/74981626-3a18-497f-acef-134d623704cc-fpt.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\images\\74981626-3a18-497f-acef-134d623704cc-fpt.jpg"
-    },
-    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\751627e2-5d0b-4ac8-a403-05a3ee68ef0a-8c56de959cd76b8932c6.jpg",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -6239,12 +6239,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\76b2e573-d22e-4398-810d-e4dc81fd0690-91316705_2826932030767599_4384472391519043584_n.jpg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\7bb67b6e-ac02-4385-8ee2-cb91928c5ec8-e12e1e.jpg",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\7a04519f-b2c5-4670-b310-d7c5867d308f-3.jpg",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
       "BasePath": "_content/Tranning",
-      "RelativePath": "uploads/images/7bb67b6e-ac02-4385-8ee2-cb91928c5ec8-e12e1e.jpg",
+      "RelativePath": "uploads/images/7a04519f-b2c5-4670-b310-d7c5867d308f-3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6253,7 +6253,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\images\\7bb67b6e-ac02-4385-8ee2-cb91928c5ec8-e12e1e.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\7a04519f-b2c5-4670-b310-d7c5867d308f-3.jpg"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\81103584-fe6b-40de-ba6d-e4a9065ad040-2.jpg",
@@ -6460,23 +6460,6 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\ba80c8de-efad-4165-b667-0396c9b5f280-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\cbaf6f34-080f-4a63-aec2-b20f6ee9cf04-fpt.jpg",
-      "SourceId": "Tranning",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
-      "BasePath": "_content/Tranning",
-      "RelativePath": "uploads/images/cbaf6f34-080f-4a63-aec2-b20f6ee9cf04-fpt.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\images\\cbaf6f34-080f-4a63-aec2-b20f6ee9cf04-fpt.jpg"
-    },
-    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\d0779e00-c4bc-41f1-9f76-6bddbcdcba7e-5.png",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -6577,6 +6560,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\dc1c1689-1f6f-422f-9087-71320bf7e459-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\dd130b6f-73ca-4b0f-a0d2-acc8593321dc-3.jpg",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/images/dd130b6f-73ca-4b0f-a0d2-acc8593321dc-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\dd130b6f-73ca-4b0f-a0d2-acc8593321dc-3.jpg"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\wwwroot\\uploads\\images\\de1c2a9d-43c3-4060-8b95-5ec07fbcea4e-91316705_2826932030767599_4384472391519043584_n.jpg",
