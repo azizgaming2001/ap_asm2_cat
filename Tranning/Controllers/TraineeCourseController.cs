@@ -71,9 +71,9 @@ namespace Tranning.Controllers
                     var traineecourseData = new TraineeCourse()
                     {
                         course_id = traineecourse.course_id,
-                        trainee_id = traineecourse.trainee_id,                        
+                        trainee_id = traineecourse.trainee_id,
                         created_at = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
-                };
+                    };
 
                     _dbContext.TraineeCourses.Add(traineecourseData);
                     _dbContext.SaveChanges(true);
@@ -81,13 +81,13 @@ namespace Tranning.Controllers
                 }
                 catch (Exception ex)
                 {
-                    
+
                     TempData["saveStatus"] = false;
                 }
                 return RedirectToAction(nameof(TraineeCourseController.Index), "TraineeCourse");
-            }                         
-                               
-       
+            }
+
+
             var courseList = _dbContext.Courses
               .Where(m => m.deleted_at == null)
               .Select(m => new SelectListItem { Value = m.id.ToString(), Text = m.name }).ToList();
@@ -98,7 +98,7 @@ namespace Tranning.Controllers
               .Select(m => new SelectListItem { Value = m.id.ToString(), Text = m.full_name }).ToList();
             ViewBag.Stores1 = traineeList;
 
-            
+
             Console.WriteLine(ModelState.IsValid);
             foreach (var key in ModelState.Keys)
             {

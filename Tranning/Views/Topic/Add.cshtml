@@ -31,7 +31,7 @@
                                 <textarea asp-for="description" class="form-control" rows="5"></textarea>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">                            
+                        <div class="col-sm-12 col-md-6">
                             <div class="form-group">
                                 <label asp-for="status" class="control-label"></label>
                                 <select class="form-control" asp-for="status">
@@ -44,6 +44,11 @@
                                 <label asp-for="file" class="control-label"></label>
                                 <input type="file" class="form-control" asp-for="file" />
                                 <span class="text-danger" asp-validation-for="file"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="document_file" class="control-label"></label>
+                                <input type="file" class="form-control" asp-for="document_file" />
+                                <span class="text-danger" asp-validation-for="document_file"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="photo" class="control-label"></label>

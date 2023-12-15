@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\Tranning.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\Tranning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\Tranning.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\Tranning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\Tranning.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\Tranning.csproj",
         "projectName": "Tranning",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\Tranning.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\Tranning.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\AD_ASM-main\\Tranning\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
