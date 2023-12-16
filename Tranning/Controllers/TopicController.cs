@@ -107,18 +107,17 @@ namespace Tranning.Controllers
                 {
                     try
                     {
-                        string VideoFileName = await UploadVideo(topic.photo);
-                        string AttachFileName = await UploadAttachFile(topic.file);
-                        string DocumentName = await UploadDocuments(topic.document_file);
+                        string uniqueFileName = await UploadFile(topic.photo);
+                        string file = await UploadFile(topic.file);
                         var topicData = new Topic()
                         {
                             course_id = topic.course_id,
                             name = topic.name,
                             description = topic.description,
-                            videos = VideoFileName,
+                            videos = uniqueFileName,
                             status = topic.status,
-                            documents = DocumentName,
-                            attach_file = AttachFileName,
+                            documents = topic.documents,
+                            attach_file = file,
                             created_at = DateTime.Now
                         };
 
@@ -154,72 +153,27 @@ namespace Tranning.Controllers
             }
         }
 
-        private async Task<string> UploadVideo(IFormFile file)
+        private async Task<string> UploadFile(IFormFile file)
         {
-            string VideoFileName;
+            string uniqueFileName;
             try
             {
-                string pathUploadServer = "wwwroot\\uploads\\videos";
-                string videoName = file.FileName;
-                videoName = Path.GetFileName(videoName);
+                string pathUploadServer = "wwwroot\\uploads\\images";
+                string fileName = file.FileName;
+                fileName = Path.GetFileName(fileName);
                 string uniqueStr = Guid.NewGuid().ToString();
-                videoName = uniqueStr + "-" + videoName;
-                string uploadPath = Path.Combine(Directory.GetCurrentDirectory(), pathUploadServer, videoName);
+                fileName = uniqueStr + "-" + fileName;
+                string uploadPath = Path.Combine(Directory.GetCurrentDirectory(), pathUploadServer, fileName);
                 var stream = new FileStream(uploadPath, FileMode.Create);
                 await file.CopyToAsync(stream);
-                VideoFileName = videoName;
+                uniqueFileName = fileName;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error during file upload.");
-                VideoFileName = ex.Message.ToString();
+                uniqueFileName = ex.Message.ToString();
             }
-            return VideoFileName;
-        }
-        private async Task<string> UploadAttachFile(IFormFile file)
-        {
-            string AttachFileName;
-            try
-            {
-                string pathUploadServer = "wwwroot\\uploads\\attachfiles";
-                string attachfileName = file.FileName;
-                attachfileName = Path.GetFileName(attachfileName);
-                string uniqueStr = Guid.NewGuid().ToString();
-                attachfileName = uniqueStr + "-" + attachfileName;
-                string uploadPath = Path.Combine(Directory.GetCurrentDirectory(), pathUploadServer, attachfileName);
-                var stream = new FileStream(uploadPath, FileMode.Create);
-                await file.CopyToAsync(stream);
-                AttachFileName = attachfileName;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error during file upload.");
-                AttachFileName = ex.Message.ToString();
-            }
-            return AttachFileName;
-        }
-
-        private async Task<string> UploadDocuments(IFormFile file)
-        {
-            string DocumentFileName;
-            try
-            {
-                string pathUploadServer = "wwwroot\\uploads\\documents";
-                string documentName = file.FileName;
-                documentName = Path.GetFileName(documentName);
-                string uniqueStr = Guid.NewGuid().ToString();
-                documentName = uniqueStr + "-" + documentName;
-                string uploadPath = Path.Combine(Directory.GetCurrentDirectory(), pathUploadServer, documentName);
-                var stream = new FileStream(uploadPath, FileMode.Create);
-                await file.CopyToAsync(stream);
-                DocumentFileName = documentName;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error during file upload.");
-                DocumentFileName = ex.Message.ToString();
-            }
-            return DocumentFileName;
+            return uniqueFileName;
         }
 
         private void PopulateCategoryDropdown()
@@ -305,8 +259,6 @@ namespace Tranning.Controllers
         {
             var data = _dbContext.Topics.FirstOrDefault(m => m.id == id);
 
-
-
             if (data != null)
             {
                 // Set ViewBag.Stores to populate the dropdown in the view
@@ -320,9 +272,6 @@ namespace Tranning.Controllers
                     course_id = data.course_id,
                     name = data.name,
                     description = data.description,
-                    videos = data.videos,
-                    documents = data.documents,
-                    attach_file = data.attach_file,
                     status = data.status
                     // Map other properties as needed
                 };
@@ -338,7 +287,7 @@ namespace Tranning.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(TopicDetail topic, IFormFile file)
+        public async Task<IActionResult> Update(TopicDetail topic)
         {
             try
             {
@@ -346,29 +295,21 @@ namespace Tranning.Controllers
                 {
                     var data = _dbContext.Topics.FirstOrDefault(m => m.id == topic.id);
 
-
-
                     if (data != null)
                     {
                         data.name = topic.name;
                         data.description = topic.description;
                         data.status = topic.status;
-                        data.course_id = topic.course_id;
 
                         // Update the file fields if a new file is provided
                         if (topic.file != null)
                         {
-                            data.attach_file = await UploadAttachFile(topic.file);
+                            data.attach_file = await UploadFile(topic.file);
                         }
 
                         if (topic.photo != null)
                         {
-                            data.videos = await UploadVideo(topic.photo);
-                        }
-
-                        if (topic.documents != null)
-                        {
-                            data.documents = await UploadDocuments(topic.document_file);
+                            data.videos = await UploadFile(topic.photo);
                         }
 
                         data.updated_at = DateTime.Now;
@@ -381,7 +322,7 @@ namespace Tranning.Controllers
                         TempData["UpdateStatus"] = false;
                     }
 
-                    return RedirectToAction(nameof(TopicController.Index), "Topic");
+                    return RedirectToAction(nameof(Index));
                 }
 
                 // If ModelState is not valid, repopulate the dropdown and return to the view
