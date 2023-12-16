@@ -31,6 +31,14 @@ namespace Tranning.Controllers
             }
             return View();
         }
+        public IActionResult TraineeIndex()
+        {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("SessionUsername")))
+            {
+                return RedirectToAction(nameof(LoginController.Index), "Login");
+            }
+            return View();
+        }
 
         public IActionResult TrainerIndex()
         {
