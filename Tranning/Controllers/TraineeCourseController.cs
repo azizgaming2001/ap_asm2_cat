@@ -21,21 +21,32 @@ namespace Tranning.Controllers
             TraineeCourseModel traineecourseModel = new TraineeCourseModel();
             traineecourseModel.TraineeCourseDetailLists = new List<TraineeCourseDetail>();
 
-            var data = _dbContext.TraineeCourses.Where(m => m.deleted_at == null);
+            var data = from trainee_course in _dbContext.TraineeCourses
+                       join users in _dbContext.Users on trainee_course.trainee_id equals users.id
+                       join courses in _dbContext.Courses on trainee_course.course_id equals courses.id
+                       select new { Trainee_Course = trainee_course, User = users, Course = courses };
 
-
-
-            var traineecourses = data.ToList();
-
-            foreach (var item in traineecourses)
+            data = data.Where(m => m.Trainee_Course.deleted_at == null);
+            if (!string.IsNullOrEmpty(SearchString))
             {
+                data = data.Where(m => m.User.full_name.Contains(SearchString) || m.Course.name.Contains(SearchString));
+            }
+            data.ToList();
+
+            foreach (var item in data)
+            {
+                // Use object initialization for better readability
                 traineecourseModel.TraineeCourseDetailLists.Add(new TraineeCourseDetail
                 {
-                    course_id = item.course_id,
-                    trainee_id = item.trainee_id,
-                    created_at = item.created_at,
-                    updated_at = item.updated_at
+                    trainee_id = item.Trainee_Course.trainee_id,
+                    course_id = item.Trainee_Course.course_id,
+                    created_at = item.Trainee_Course.created_at,
+
+                    updated_at = item.Trainee_Course.updated_at,
+                    full_name = item.User.full_name,
+                    name = item.Course.name,
                 });
+
             }
 
             ViewData["CurrentFilter"] = SearchString;
@@ -138,6 +149,5 @@ namespace Tranning.Controllers
 
             return RedirectToAction(nameof(TraineeCourseController.Index), "TraineeCourseController");
         }
-
     }
 }

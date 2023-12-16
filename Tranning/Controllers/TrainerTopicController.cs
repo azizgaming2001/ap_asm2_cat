@@ -20,19 +20,32 @@ namespace Tranning.Controllers
             TrainerTopicModel trainertopicModel = new TrainerTopicModel();
             trainertopicModel.TrainerTopicDetailLists = new List<TrainerTopicDetail>();
 
-            var data = _dbContext.TrainerTopics.Where(m => m.deleted_at == null);
+            var data = from trainner_topic in _dbContext.TrainerTopics
+                       join users in _dbContext.Users on trainner_topic.trainer_id equals users.id
+                       join topics in _dbContext.Topics on trainner_topic.topic_id equals topics.id
+                       select new { TrainnerTopic = trainner_topic, User = users, Topic = topics };
 
-            var trainertopics = data.ToList();
 
-            foreach (var item in trainertopics)
+            data = data.Where(m => m.TrainnerTopic.deleted_at == null);
+            if (!string.IsNullOrEmpty(SearchString))
             {
+                data = data.Where(m => m.User.full_name.Contains(SearchString) || m.Topic.name.Contains(SearchString));
+            }
+            data.ToList();
+
+            foreach (var item in data)
+            {
+                // Use object initialization for better readability
                 trainertopicModel.TrainerTopicDetailLists.Add(new TrainerTopicDetail
                 {
-                    topic_id = item.topic_id,
-                    trainer_id = item.trainer_id,
-                    created_at = item.created_at,
-                    updated_at = item.updated_at
+                    trainer_id = item.TrainnerTopic.trainer_id,
+                    topic_id = item.TrainnerTopic.topic_id,
+                    created_at = item.TrainnerTopic.created_at,
+                    updated_at = item.TrainnerTopic.updated_at,
+                    full_name = item.User.full_name,
+                    name = item.Topic.name,
                 });
+
             }
 
             ViewData["CurrentFilter"] = SearchString;

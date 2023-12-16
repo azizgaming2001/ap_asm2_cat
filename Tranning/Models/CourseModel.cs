@@ -28,6 +28,7 @@ namespace Tranning.Models
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? end_date {  get; set; }
 
+        public string? namecategory { get; set; }
         public int? vote {  get; set; }
 
         public string? avatar { get; set; }

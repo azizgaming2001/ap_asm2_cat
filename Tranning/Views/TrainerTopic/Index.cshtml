@@ -50,8 +50,10 @@
         <table class="table">
             <thead class="text-center">
                 <tr>
+                    <th>TOPIC ID</th>
+                    <th>TRAINER ID</th>
                     <th>TOPIC NAME</th>
-                    <th>TRAINER NAME</th>
+                    <th>TRAINEE NAME</th>
                     <th>CREATED AT</th>
                     <th>UPDATED AT</th>
                     <th>ACTION</th>
@@ -63,6 +65,8 @@
                     <tr>
                         <td>@item.topic_id</td>
                         <td>@item.trainer_id</td>
+                        <td>@item.name</td>
+                        <td>@item.full_name</td>
                         <td>@item.created_at</td>
                         <td>@item.updated_at</td>
                         <td>

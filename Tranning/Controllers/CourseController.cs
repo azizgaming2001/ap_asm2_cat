@@ -16,38 +16,40 @@ namespace Tranning.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(string SearchString)
+        public IActionResult Index(string searchString)
         {
             CourseModel courseModel = new CourseModel();
             courseModel.CourseDetailLists = new List<CourseDetail>();
+            var data = from course in _dbContext.Courses
+                       join category in _dbContext.Categories on course.category_id equals category.id
+                       select new { Course = course, Category = category };
+            data = data.Where(m => m.Course.deleted_at == null);
 
-            var data = _dbContext.Courses.Where(m => m.deleted_at == null);
-
-            if (!string.IsNullOrEmpty(SearchString))
+            if (!string.IsNullOrEmpty(searchString))
             {
-                data = data.Where(m => m.name.Contains(SearchString) || m.description.Contains(SearchString));
+                data = data.Where(m => m.Course.name.Contains(searchString) || m.Course.description.Contains(searchString));
             }
-
             var courses = data.ToList();
 
             foreach (var item in courses)
             {
                 courseModel.CourseDetailLists.Add(new CourseDetail
                 {
-                    id = item.id,
-                    category_id = item.category_id,
-                    name = item.name,
-                    description = item.description,
-                    avatar = item.avatar,
-                    status = item.status,
-                    start_date = item.start_date,
-                    end_date = item.end_date,
-                    created_at = item.created_at,
-                    updated_at = item.updated_at
+                    id = item.Course.id,
+                    name = item.Course.name,
+                    category_id = item.Category.id,
+                    namecategory = item.Category.name,
+                    description = item.Course.description,
+                    avatar = item.Course.avatar,
+                    status = item.Course.status,
+                    start_date = item.Course.start_date,
+                    end_date = item.Course.end_date,
+                    created_at = item.Course.created_at,
+                    updated_at = item.Course.updated_at
                 });
             }
 
-            ViewData["CurrentFilter"] = SearchString;
+            ViewData["CurrentFilter"] = searchString;
             return View(courseModel);
         }
 
