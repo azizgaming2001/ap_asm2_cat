@@ -43,27 +43,27 @@
                     <td>@item.course_id</td>
                     <td>@item.name</td>
                     <td>@item.description</td>
-                    
+
                     <td>
                         @if (!string.IsNullOrEmpty(item.videos))
                         {
-                            <video class="img-fluid" controls><source type="video/mp4" src="/uploads/images/@item.videos"></video>
-                            
+                            <video class="img-fluid" controls><source type="video/mp4" src="/uploads/videos/@item.videos"></video>
+
                         }
                     </td>
-                    
-                    
+
+
                     <td>
                         @if (!string.IsNullOrEmpty(item.attach_file))
                         {
-                            <p>Attachment: <a href="/uploads/images/@item.attach_file" download>Download</a></p>
+                            <p>Attachment: <a href="/uploads/attachfiles/@item.attach_file" download>Download</a></p>
                         }
                     </td>
 
                     <td>
                         @if (!string.IsNullOrEmpty(item.documents))
                         {
-                            <p>Document: <a href="/uploads/images/@item.documents" download>Download</a></p>
+                            <p>Document: <a href="/uploads/documents/@item.documents" download>Download</a></p>
                         }
                     </td>
                     <td>@item.status</td>

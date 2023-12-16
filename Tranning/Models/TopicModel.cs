@@ -29,7 +29,7 @@ namespace Tranning.Models
 
         [Required(ErrorMessage = "Please choose a file.")]
         [AllowedExtensionFile(new string[] { ".doc", ".docx", ".pdf" })]
-        [AllowedSizeFile(8 * 1024 * 1024)]
+        [AllowedSizeFile(50 * 1024 * 1024)]
         public IFormFile document_file { get; set; }
         public string? attach_file { get; set; }
 
