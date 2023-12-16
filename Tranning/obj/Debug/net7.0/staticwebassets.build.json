@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JyWDO7IDpLq0Vt+8Iuanm+mn/Qz8aCKHdfP9Nr3MKUU=",
+  "Hash": "edBl8c+IqpIFQMfCVAgY+0qelEPEMEkfRFiwux4BMng=",
   "Source": "Tranning",
   "BasePath": "_content/Tranning",
   "Mode": "Default",
@@ -5729,6 +5729,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\05417597-8007-4654-83be-1253befb5266-450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/attachfiles/05417597-8007-4654-83be-1253befb5266-450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\attachfiles\\05417597-8007-4654-83be-1253befb5266-450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -5744,6 +5761,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\attachfiles\\450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\730606f9-925c-4718-82c2-ba3eb83835cf-test.rar",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/attachfiles/730606f9-925c-4718-82c2-ba3eb83835cf-test.rar",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\attachfiles\\730606f9-925c-4718-82c2-ba3eb83835cf-test.rar"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\8460eed8-6dc6-40f7-b2b2-e22c07f75bf4-test.rar",
@@ -6970,6 +7004,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\f63ce7be-931e-4032-ab68-c7ce443e5619-1620_1.jpg"
     },
     {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\48ebc1e0-2b4d-4627-a34b-ec1b97155b04-mov_bbb.mp4",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/videos/48ebc1e0-2b4d-4627-a34b-ec1b97155b04-mov_bbb.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\videos\\48ebc1e0-2b4d-4627-a34b-ec1b97155b04-mov_bbb.mp4"
+    },
+    {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\d2d1b962-3c48-4721-bf17-4cbf1a97bdf3-test1.mp4",
       "SourceId": "Tranning",
       "SourceType": "Discovered",
@@ -6985,6 +7036,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\videos\\d2d1b962-3c48-4721-bf17-4cbf1a97bdf3-test1.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\e721bb45-352c-450f-a64f-2d072541e8ab-mov_bbb.mp4",
+      "SourceId": "Tranning",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\",
+      "BasePath": "_content/Tranning",
+      "RelativePath": "uploads/videos/e721bb45-352c-450f-a64f-2d072541e8ab-mov_bbb.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\videos\\e721bb45-352c-450f-a64f-2d072541e8ab-mov_bbb.mp4"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\fd1f5266-9fca-4daf-8889-9a67425d41a4-test1.mp4",
