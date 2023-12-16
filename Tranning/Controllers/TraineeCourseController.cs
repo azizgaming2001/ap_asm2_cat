@@ -133,8 +133,8 @@ namespace Tranning.Controllers
 
                 if (data != null)
                 {
-                    data.deleted_at = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                    _dbContext.SaveChanges(true);
+                    data.deleted_at = DateTime.Now;
+                    _dbContext.SaveChanges();
                     TempData["DeleteStatus"] = true;
                 }
                 else
@@ -149,5 +149,8 @@ namespace Tranning.Controllers
 
             return RedirectToAction(nameof(TraineeCourseController.Index), "TraineeCourseController");
         }
+
+        
+       
     }
 }
