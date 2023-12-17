@@ -123,16 +123,15 @@ namespace Tranning.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete(int trainee_id = 0, int course_id = 0)
+        public IActionResult Delete(int id = 0)
         {
             try
             {
-                var data = _dbContext.TraineeCourses
-                    .Where(tc => tc.trainee_id == trainee_id && tc.course_id == course_id)
-                    .FirstOrDefault();
+                var data = _dbContext.TraineeCourses.FirstOrDefault(m => m.course_id == id);
 
                 if (data != null)
                 {
+                    // Soft delete by updating the deleted_at field
                     data.deleted_at = DateTime.Now;
                     _dbContext.SaveChanges();
                     TempData["DeleteStatus"] = true;
@@ -142,15 +141,14 @@ namespace Tranning.Controllers
                     TempData["DeleteStatus"] = false;
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 TempData["DeleteStatus"] = false;
+                // Log the exception if needed: _logger.LogError(ex, "An error occurred while deleting the topic.");
             }
 
-            return RedirectToAction(nameof(TraineeCourseController.Index), "TraineeCourseController");
+            return RedirectToAction(nameof(Index), new { SearchString = "" });
         }
 
-        
-       
     }
 }

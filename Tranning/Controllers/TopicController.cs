@@ -356,19 +356,29 @@ namespace Tranning.Controllers
                         data.course_id = topic.course_id;
 
                         // Update the file fields if a new file is provided
-                        if (topic.file != null)
-                        {
-                            data.attach_file = await UploadAttachFile(topic.file);
-                        }
-
                         if (topic.photo != null)
                         {
                             data.videos = await UploadVideo(topic.photo);
                         }
 
-                        if (topic.documents != null)
+                        if (topic.file == null)
+                        {
+                            data.attach_file = await UploadAttachFile(topic.file);
+                            if (topic.file != null)
+                            {
+                                data.attach_file = await UploadAttachFile(topic.file);
+                            }
+                        }
+
+                        
+
+                        if (topic.documents == null)
                         {
                             data.documents = await UploadDocuments(topic.document_file);
+                            if (topic.documents != null)
+                            {
+                                data.documents = await UploadDocuments(topic.document_file);
+                            }
                         }
 
                         data.updated_at = DateTime.Now;

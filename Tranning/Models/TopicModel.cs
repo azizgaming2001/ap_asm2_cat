@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Http;
 using Tranning.Validations;
 
@@ -27,13 +28,13 @@ namespace Tranning.Models
         public IFormFile photo { get; set; }
         public string? documents { get; set; }
 
-        [Required(ErrorMessage = "Please choose a file.")]
+        [AllowNull]
         [AllowedExtensionFile(new string[] { ".doc", ".docx", ".pdf" })]
         [AllowedSizeFile(50 * 1024 * 1024)]
         public IFormFile document_file { get; set; }
         public string? attach_file { get; set; }
 
-        [Required(ErrorMessage = "Please choose a file.")]
+        [AllowNull]
         [AllowedExtensionFile(new string[] { ".zip", ".rar" })]
         [AllowedSizeFile(8 * 1024 * 1024)]
         public IFormFile file { get; set; }

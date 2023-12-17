@@ -1345,6 +1345,10 @@
       "PackagePath": "staticwebassets\\uploads\\attachfiles\\05417597-8007-4654-83be-1253befb5266-450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\2e75635e-f7e6-4534-83ca-e8afee120e13-450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar",
+      "PackagePath": "staticwebassets\\uploads\\attachfiles\\2e75635e-f7e6-4534-83ca-e8afee120e13-450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar",
       "PackagePath": "staticwebassets\\uploads\\attachfiles\\450bdd6f-7418-441f-9a92-fe01665f25d3-test.rar"
     },
@@ -1355,6 +1359,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\attachfiles\\8460eed8-6dc6-40f7-b2b2-e22c07f75bf4-test.rar",
       "PackagePath": "staticwebassets\\uploads\\attachfiles\\8460eed8-6dc6-40f7-b2b2-e22c07f75bf4-test.rar"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\documents\\40827517-7aee-40b5-b64b-65fe4e485af9-b452a252-7499-4d18-b06d-8b6b5e9981e1-Unit 30 - Assignment brief 2.pdf",
+      "PackagePath": "staticwebassets\\uploads\\documents\\40827517-7aee-40b5-b64b-65fe4e485af9-b452a252-7499-4d18-b06d-8b6b5e9981e1-Unit 30 - Assignment brief 2.pdf"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\documents\\96f9e2db-4e0b-446e-9aea-89a98525c815-IoT.Assignment-2_1ST_daoxuancat_bh00339 (1).pdf",
@@ -1643,6 +1651,14 @@
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\48ebc1e0-2b4d-4627-a34b-ec1b97155b04-mov_bbb.mp4",
       "PackagePath": "staticwebassets\\uploads\\videos\\48ebc1e0-2b4d-4627-a34b-ec1b97155b04-mov_bbb.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\52193dff-4b0d-480d-8969-a980255be597-mov_bbb.mp4",
+      "PackagePath": "staticwebassets\\uploads\\videos\\52193dff-4b0d-480d-8969-a980255be597-mov_bbb.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\ba3cbf5a-cbd8-4263-a0f0-9415b0a9a52e-test1.mp4",
+      "PackagePath": "staticwebassets\\uploads\\videos\\ba3cbf5a-cbd8-4263-a0f0-9415b0a9a52e-test1.mp4"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\ap_asm2_cat\\Tranning\\wwwroot\\uploads\\videos\\d2d1b962-3c48-4721-bf17-4cbf1a97bdf3-test1.mp4",
